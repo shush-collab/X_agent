@@ -1,0 +1,72 @@
+1. Project Scaffolding
+   - Create project structure with docker-compose.yml
+   - Set up Python virtual environment + requirements.txt
+   - Create basic FastAPI app skeleton
+   - Configure .env template for credentials
+
+2. Local Infrastructure
+   - Docker Compose: PostgreSQL + pgvector, Redis, Ollama
+   - Database schema: users, tweets, replies, actions tables
+   - Redis configuration for ca (4 hours)
+   - Test all containers are running
+
+3. Credentials & Authentication
+   - Set up X account credentials (10 users in JSON/env)
+   - Create session management for account rotation
+   - Implement basic credential encryption/security
+   - Test browser login with 1 account
+
+4. Basic Crawler Service
+   - Playwright setup with 1 browser instance
+   - Implement simple tweet scraping (text, metadata)
+   - Store raw data in PostgreSQL
+   - Test crawl->store pipeline
+
+5. Local AI Setup
+   - Install Ollama + download llama3.1:8b or mistral:7b
+   - Set up sentence-transformers for embeddings
+   - Test local LLM response generation
+   - Implement basic reply generation prompt
+
+6. Ranking & Filtering
+   - Simple heuristic ranking (likes, recency, keywords)
+   - Basic safety filter (keyword blocklist)
+   - Store ranked content in database
+   - Test rank->filter pipeline
+
+7. Poster Service
+   - Implement account rotation logic
+   - Basic rate limiting (1 post/5 min per account)
+   - Simple reply posting via Playwright
+   - Log all actions to database
+
+8. Web Interface & Integration
+   - Basic FastAPI endpoints for monitoring
+   - Simple Streamlit/HTML UI to view queue
+   - Manual trigger endpoints for testing
+   - End-to-end test: crawl->rank->generate->post
+
+
+9. Integration & Bug Fixing
+   - Fix any pipeline breaks
+   - Add basic error handling
+   - Test with 2-3 real X accounts
+   - Document setup process
+
+10. Monitoring & Logging
+    - Basic console logging
+    - Database health checks
+    - Simple progress tracking in UIching and queues
+   - Test all containers are running
+
+Must-Have for MVP:
+
+✅ Single browser session working
+
+✅ Basic tweet scraping → database
+
+✅ Local LLM generating replies
+
+✅ Single account posting replies
+
+✅ Web interface to monitor progress
