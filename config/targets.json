@@ -1,0 +1,43 @@
+// GOAL: Define what content the system should engage with
+// PURPOSE: Content discovery parameters - keywords, accounts, filters
+// RESPONSIBILITY: Tell crawler what to search for and what to avoid
+{
+  "keywords": [
+    "AI",
+    "machine learning",
+    "python",
+    "software engineering",
+    "generative AI",
+    "autonomous agents",
+    "prompt engineering",
+    "LLMs"
+  ],
+  "topic_clusters": {
+    "agents": ["autonomous agents", "multi-agent systems", "agentic workflows"],
+    "developer_tools": ["devops automation", "AI tooling", "LLM orchestration"],
+    "research": ["AI safety", "open weighting", "benchmarking"]
+  },
+  "hashtags": ["#AI", "#MachineLearning", "#Python", "#DevTools", "#LLM"],
+  "languages": ["en"],
+  "sources": ["newsletters", "blogs", "forums", "github"],
+  "content_types": ["article", "tweet", "thread"],
+  "time_window_days": 7,
+  "engagement_threshold": {
+    "min_likes": 15,
+    "min_retweets": 5
+  },
+  "exclude_keywords": [
+    "politics",
+    "crypto",
+    "giveaway",
+    "sports betting",
+    "controversy",
+    "nsfw"
+  ],
+  "exclude_users": [],
+  "strict_match_phrases": [
+    "autonomous agent",
+    "AI toolchain",
+    "python automation"
+  ]
+}

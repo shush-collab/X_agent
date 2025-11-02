@@ -1,0 +1,29 @@
+# GOAL: Prevent harmful or off-brand content from being posted
+# PURPOSE: First-line safety filter using keyword matching
+# RESPONSIBILITY: Block replies containing dangerous or inappropriate terms
+politics
+election
+crypto scam
+get rich quick
+buy now
+click here
+scam alert
+limited time offer
+exclusive deal
+investment scheme
+pump and dump
+free money
+guaranteed returns
+no risk guaranteed
+double your income
+share your seed phrase
+airdrop giveaway
+political debate
+partisan message
+controversial topic
+hate speech
+extremist content
+gamble now
+adult content
+nsfw
+misinformation
